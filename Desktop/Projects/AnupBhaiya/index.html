@@ -1,0 +1,44 @@
+<!DOCT
+YPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CODEFORCES</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="EnterHandle"></label>
+            <input type="text" name="Handle" id="EnterHandle" placeholder="Handles" autofocus>
+            or
+            <label for="EnterFileofHandle"></label>
+            <input type="file" id="EnterFileofHandle"  name="Handle" placeholder="Filename" autofocus>
+        </form>
+        <div>
+            <button id="send">send</button>
+        </div>
+        <form action="" method="post">
+            <label for="NumberofQuestions">How Many Questions</label>
+            <input type="number" id="NumberofQuestions" class="form-control" name="numbers" 
+                    placeholder="numberofquestions" autofocus oninput="createform()">
+        </form>
+        <div id="formcontainer"></div>
+        <button id="fetch">fetch</button>
+        <div id="questionContainer"></div>
+        <div id="Satisfaction">
+            <form >
+                <fieldset>
+                    <legend>Satisfaction</legend>
+                    <input type="radio" id="satisfied" name="satisfied" value="yes" oninput="selenium(satisfied)">
+                    <label for="satisfied">Yes</label>
+                    <input type="radio" id="notsatisfied" name="satisfied" value="no" oninput="selenium(notsatisfied)">
+                    <label for="notsatisfied">No</label>
+                </fieldset>
+            </form>
+            <div id="answer"></div>
+        </div>
+        <div id="zeeshan"></div>
+        <script src="script.js"></script>
+</body>
+</html
